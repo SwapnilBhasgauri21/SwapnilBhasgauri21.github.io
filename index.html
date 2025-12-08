@@ -6,6 +6,115 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<style>
+			body {
+			    letter-spacing: 0.2px;
+			    line-height: 1.7;
+			    font-size: 17px;
+			}
+			
+			h1, h2, h3 {
+			    letter-spacing: 0.5px !important;
+			    font-weight: 700 !important;
+			}
+			
+			/* --- HERO TITLE (Your Name) --- */
+			#intro h1 {
+			    font-size: 3.4rem !important;
+			    letter-spacing: 3px !important;
+			    margin-bottom: 1rem !important;
+			    text-transform: uppercase;
+			    color: #0f172a !important;
+			}
+			
+			/* --- HERO SUBTEXT --- */
+			#intro p {
+			    font-size: 1.25rem !important;
+			    line-height: 1.8 !important;
+			    max-width: 850px;
+			    margin: 0 auto 1.5rem auto;
+			}
+			
+			/* --- SECTION SPACING (Cleaner layout) --- */
+			#main {
+			    margin-top: 2rem !important;
+			}
+			
+			.posts {
+			    margin-top: 3rem !important;
+			    gap: 2.5rem !important;
+			}
+			
+			/* --- FEATURED PROJECT HEADER (Streamlit-Snowflake tool) --- */
+			.post.featured header.major h2 {
+			    font-size: 2.8rem !important;
+			    line-height: 1.25 !important;
+			    margin-bottom: 1rem !important;
+			}
+			
+			/* --- PROJECT CARDS (Titles) --- */
+			.posts article h2 a {
+			    font-size: 1.75rem !important;
+			    line-height: 1.3 !important;
+			}
+			
+			/* --- PROJECT DESCRIPTION TEXT --- */
+			.posts article p,
+			.post.featured p {
+			    font-size: 1.05rem !important;
+			    line-height: 1.85 !important;
+			    max-width: 90%;
+			}
+			
+			/* --- PROJECT CARD SPACING --- */
+			.posts article {
+			    padding: 2rem 1.8rem !important;
+			    border-radius: 1.5rem !important;
+			}
+			
+			/* --- PROJECT CARD IMAGES (Less cramped) --- */
+			.posts .image.fit img {
+			    border-radius: 1rem !important;
+			    margin-bottom: 1.2rem !important;
+			}
+			
+			/* --- KPI BAND TITLE SPACING --- */
+			.kpi-card h3 {
+			    font-size: 1.5rem !important;
+			    letter-spacing: 1.1px !important;
+			    margin-bottom: 0.5rem !important;
+			}
+			
+			/* --- KPI CARD BODY --- */
+			.kpi-card p {
+			    font-size: 1rem !important;
+			    line-height: 1.6 !important;
+			}
+			
+			/* --- BUTTON IMPROVEMENTS --- */
+			.actions .button {
+			    padding: 0.8rem 1.6rem !important;
+			    font-size: 0.95rem !important;
+			    border-radius: 0.6rem !important;
+			    letter-spacing: 0.9px !important;
+			}
+			
+			.actions .button.large {
+			    font-size: 1.05rem !important;
+			}
+			
+			/* --- CONTACT SECTION SPACING --- */
+			.split.contact {
+			    margin-top: 4rem !important;
+			}
+			
+			/* --- SMOOTH HOVER EFFECTS FOR PROJECT CARDS --- */
+			.posts article:hover,
+			.post.featured:hover {
+			    transform: translateY(-6px);
+			    transition: 0.25s ease;
+			    box-shadow: 0 18px 40px rgba(0,0,0,0.25) !important;
+			}
+
 			#intro h1 {
 			    color: #0f172a !important;
 			    font-weight: 800 !important;
@@ -52,10 +161,7 @@
 			    background: #111827 !important;
 			    border-color: rgba(255,255,255,0.1) !important;
 			}
-
 			
-
-
 			/* KPI band (dashboard feel) */
 			.kpi-band {
 				display: grid;
@@ -321,6 +427,7 @@
 
 	</body>
 </html>
+
 
 
 
