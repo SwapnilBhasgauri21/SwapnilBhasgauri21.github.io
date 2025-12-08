@@ -5,6 +5,83 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<style>
+			/* KPI band (dashboard feel) */
+			.kpi-band {
+				display: grid;
+				grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+				gap: 1.5rem;
+				margin: 3rem 0 2rem 0;
+				padding: 1.5rem 1.5rem 0.5rem 1.5rem;
+				border-radius: 1.25rem;
+				background: linear-gradient(135deg, #0f172a, #020617);
+				color: #e5e7eb;
+			}
+			.kpi-card {
+				background: rgba(15, 23, 42, 0.9);
+				border-radius: 1rem;
+				padding: 1.25rem 1.5rem;
+				box-shadow: 0 12px 30px rgba(15, 23, 42, 0.5);
+				border: 1px solid rgba(148, 163, 184, 0.4);
+			}
+			.kpi-card h3 {
+				margin: 0 0 0.25rem 0;
+				font-size: 1.4rem;
+				font-weight: 700;
+			}
+			.kpi-card p {
+				margin: 0;
+				font-size: 0.9rem;
+				color: #cbd5f5;
+			}
+			
+			/* Project tags (pill style) */
+			.tags {
+				list-style: none;
+				display: flex;
+				flex-wrap: wrap;
+				gap: 0.4rem;
+				margin: 0.75rem 0 0.25rem 0;
+				padding: 0;
+			}
+			.tags li {
+				font-size: 0.7rem;
+				text-transform: uppercase;
+				letter-spacing: 0.08em;
+				padding: 0.25rem 0.6rem;
+				border-radius: 999px;
+				background: rgba(15, 23, 42, 0.06);
+				border: 1px solid rgba(15, 23, 42, 0.12);
+			}
+			
+			/* Slightly richer project cards */
+			.posts article, .post.featured {
+				border-radius: 1.25rem;
+				overflow: hidden;
+				box-shadow: 0 20px 40px rgba(15, 23, 42, 0.15);
+				border: 1px solid rgba(148, 163, 184, 0.35);
+				background: #0b1120;
+				color: #e5e7eb;
+			}
+			.posts article p,
+			.post.featured p {
+				color: #cbd5f5;
+			}
+			.posts .image.fit img,
+			.post.featured .image.main img {
+				filter: saturate(1.1);
+			}
+			
+			/* Light hero to keep it clean */
+			#intro {
+				background: #f9fafb;
+				color: #020617;
+			}
+			#intro a {
+				color: #2563eb;
+			}
+			</style>
+
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
@@ -194,6 +271,7 @@
 
 	</body>
 </html>
+
 
 
 
