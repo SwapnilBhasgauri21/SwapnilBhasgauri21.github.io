@@ -295,6 +295,71 @@
 			.icon-link:hover {
 			    opacity: 1;
 			}
+			.top-nav {
+			    position: sticky;
+			    top: 0;
+			    z-index: 1000;
+			    width: 100%;
+			    background: rgba(255,255,255,0.92);
+			    backdrop-filter: blur(12px);
+			    border-bottom: 1px solid rgba(0,0,0,0.08);
+			    padding: 0.75rem 0;
+			}
+			
+			.nav-container {
+			    max-width: 1200px;
+			    margin: auto;
+			    display: flex;
+			    justify-content: space-between;
+			    align-items: center;
+			    padding: 0 2rem;
+			}
+			
+			.logo {
+			    font-size: 1.4rem;
+			    font-weight: 700;
+			    color: #0f172a;
+			    text-transform: uppercase;
+			    letter-spacing: 1.5px;
+			}
+			
+			.nav-links {
+			    display: flex;
+			    gap: 2rem;
+			}
+			
+			.nav-links a {
+			    font-size: 1rem;
+			    color: #1e293b;
+			    font-weight: 600;
+			    text-decoration: none;
+			}
+			
+			.nav-links a:hover {
+			    color: #2563eb;
+			}
+			
+			.resume-btn {
+			    background: #2563eb;
+			    color: white !important;
+			    padding: 0.5rem 1rem;
+			    border-radius: 5px;
+			}
+			
+			.resume-btn:hover {
+			    background: #1d4ed8;
+			}
+			#projects {
+			    display: grid;
+			    grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+			    gap: 2.5rem;
+			    margin-top: 2rem;
+			}
+			
+			#projects article {
+			    border-radius: 1.2rem;
+			    padding: 2rem;
+			}
 
 			</style>
 
@@ -328,20 +393,19 @@
 			</header>
 
 			<!-- Nav -->
-			<nav id="nav" class="custom-nav">
-			    <div class="nav-left">
-			        <a href="index.html" class="nav-logo">Swapnil Bhasgauri</a>
+			<!-- Modern Navbar -->
+			<header class="top-nav">
+			    <div class="nav-container">
+			        <a href="index.html" class="logo">Swapnil Bhasgauri</a>
+			
+			        <nav class="nav-links">
+			            <a href="#projects">Projects</a>
+			            <a href="#about">About</a>
+			            <a href="#contact">Contact</a>
+			            <a href="Swapnil_Bhasgauri_Resume.pdf" class="resume-btn">Resume</a>
+			        </nav>
 			    </div>
-			    <div class="nav-right">
-			        <a href="#projects">Projects</a>
-			        <a href="#about">About</a>
-			        <a href="#contact">Contact</a>
-			        <a href="Swapnil_Bhasgauri_Resume.pdf" class="resume-btn">Resume</a>
-			        <a href="https://www.linkedin.com/in/swapnilbhasgauri/" class="icon-link">LinkedIn</a>
-			        <a href="https://github.com/SwapnilBhasgauri21" class="icon-link">GitHub</a>
-			    </div>
-			</nav>
-
+			</header>
 
 			<!-- Main -->
 			<div id="main">
@@ -492,6 +556,7 @@
 
 	</body>
 </html>
+
 
 
 
