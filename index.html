@@ -6,6 +6,24 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<style>
+			.posts {
+			    display: block !important;
+			    padding: 0 !important;
+			}
+			
+			/* Reset article floats/flex/inline rules */
+			.posts article {
+			    float: none !important;
+			    width: 100% !important;
+			    margin: 0 !important;
+			    display: block !important;
+			}
+			
+			/* Also override .posts > article image alignment */
+			.posts .image {
+			    margin: 0 !important;
+			}
+
 			/* ============================================================
 			   GLOBAL TYPOGRAPHY + LAYOUT
 			   ============================================================ */
@@ -415,6 +433,7 @@
 
 	</body>
 </html>
+
 
 
 
