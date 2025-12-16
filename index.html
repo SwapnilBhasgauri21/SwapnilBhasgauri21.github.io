@@ -279,7 +279,16 @@
 			.split.contact {
 			    margin-top: 4rem !important;
 			}
-
+			/* Center View Project buttons inside cards */
+			#projects .actions.special {
+			    display: flex !important;
+			    justify-content: center !important;
+			    margin-top: 1.4rem;
+			}
+			
+			#projects .actions.special li {
+			    float: none !important;
+			}
 
 			</style>
 
@@ -311,7 +320,7 @@
 			<!-- Modern Navbar -->
 			<header class="top-nav">
 			    <div class="nav-container">
-			        <a href="index.html" class="logo">Swapnil Bhasgauri</a>
+			        <a href="#intro" class="logo">Data & BI Portfolio</a>
 			
 			        <nav class="nav-links">
 			            <a href="#projects">Projects</a>
@@ -438,19 +447,33 @@
 			</div>
 			<!-- KPI Band -->
 			<section id="kpi-band" class="kpi-band">
-				<div class="kpi-card">
-					<h3>3+ years</h3>
-					<p>Data & BI experience<br/>Healthcare, Manufacturing, E-commerce</p>
-				</div>
-				<div class="kpi-card">
-					<h3>Tech Stack</h3>
-					<p>Snowflake, SQL, Python, Power BI,<br/>Tableau, Streamlit</p>
-				</div>
-			        <div class="kpi-card">
-					<h3>Focus Areas</h3>
-					<p>Data Quality · Dashboards · ETL ·<br/>A/B Testing · RAQA Analytics</p>
-				</div>
+			
+			  <div class="kpi-card">
+			    <h3>Data Validation & Quality</h3>
+			    <p>
+			      Automated source-to-target checks, schema validation, 
+			      reconciliation logic, and audit-ready reporting for regulated data.
+			    </p>
+			  </div>
+			
+			  <div class="kpi-card">
+			    <h3>Analytics Enablement</h3>
+			    <p>
+			      Decision-ready dashboards, KPI frameworks, and self-serve tools
+			      that reduce manual effort for business and quality teams.
+			    </p>
+			  </div>
+			
+			  <div class="kpi-card">
+			    <h3>Engineering Mindset</h3>
+			    <p>
+			      SQL-first analysis, scalable logic, reusable components,
+			      and clear documentation aligned with business workflows.
+			    </p>
+			  </div>
+			
 			</section>
+
 
 
 			<!-- Copyright -->
@@ -471,6 +494,7 @@
 
 	</body>
 </html>
+
 
 
 
