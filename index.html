@@ -279,16 +279,21 @@
 			.split.contact {
 			    margin-top: 4rem !important;
 			}
-			/* Center View Project buttons inside cards */
-			#projects .actions.special {
-			    display: flex !important;
-			    justify-content: center !important;
-			    margin-top: 1.4rem;
-			}
 			
-			#projects .actions.special li {
-			    float: none !important;
-			}
+			/* === UNIVERSAL CENTERING FOR ACTION BUTTONS === */
+				.actions,
+				.actions.special {
+				    display: flex !important;
+				    justify-content: center !important;
+				    align-items: center !important;
+				    padding-top: 1.4rem;
+				}
+				
+				.actions li {
+				    list-style: none !important;
+				    margin: 0 !important;
+				    padding: 0 !important;
+				}
 
 			</style>
 
@@ -492,8 +497,16 @@
 		<script src="assets/js/util.js"></script>
 		<script src="assets/js/main.js"></script>
 
+		<script>
+		  document.querySelectorAll('a[href^="http"]').forEach(link => {
+		    link.setAttribute("target", "_blank");
+		    link.setAttribute("rel", "noopener");
+		  });
+		</script>
+
 	</body>
 </html>
+
 
 
 
