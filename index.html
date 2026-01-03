@@ -369,11 +369,45 @@ html, body {
 				  opacity: 1 !important;
 				}
 
-/* If ABOUT is a standalone header inside main (common in HTML5UP) */
-#main > header.major h2 {
-  color: rgba(255,255,255,0.92) !important;
-  opacity: 1 !important;
-}
+				/* If ABOUT is a standalone header inside main (common in HTML5UP) */
+				#main > header.major h2 {
+				  color: rgba(255,255,255,0.92) !important;
+				  opacity: 1 !important;
+				}
+
+				/* ===========================
+   INTRO: fix white-on-white link + down arrow button
+   =========================== */
+			
+			#intro a {
+			  color: #2563eb !important;
+			  font-weight: 700 !important;
+			  text-decoration: none !important;
+			}
+			
+			#intro a:hover {
+			  color: #1d4ed8 !important;
+			  text-decoration: underline !important;
+			}
+			
+			/* Make the down arrow button readable on the light intro background */
+			#intro .actions .button {
+			  background: #0f172a !important;
+			  border-color: #0f172a !important;
+			  color: #ffffff !important;
+			}
+			
+			/* Ensure the FontAwesome icon/arrow inherits the button color */
+			#intro .actions .button:before {
+			  color: inherit !important;
+			}
+			
+			#intro .actions .button:hover {
+			  background: #2563eb !important;
+			  border-color: #2563eb !important;
+			  color: #ffffff !important;
+			}
+
 
 			</style>
 
@@ -628,6 +662,7 @@ html, body {
 
 	</body>
 </html>
+
 
 
 
