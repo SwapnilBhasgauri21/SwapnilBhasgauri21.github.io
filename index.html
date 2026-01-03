@@ -359,6 +359,21 @@ html, body {
 				  border-color: rgba(56,189,248,0.95) !important;
 				}
 
+				/* Force ABOUT title to be visible (theme override) */
+				#about h2,
+				#about h3,
+				#about header.major h2,
+				h2#about,
+				h2[data-section="about"] {
+				  color: rgba(255,255,255,0.92) !important;
+				  opacity: 1 !important;
+				}
+
+/* If ABOUT is a standalone header inside main (common in HTML5UP) */
+#main > header.major h2 {
+  color: rgba(255,255,255,0.92) !important;
+  opacity: 1 !important;
+}
 
 			</style>
 
@@ -613,6 +628,7 @@ html, body {
 
 	</body>
 </html>
+
 
 
 
