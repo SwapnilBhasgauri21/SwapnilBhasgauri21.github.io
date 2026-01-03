@@ -319,6 +319,47 @@ html, body {
 				    padding: 0 !important;
 				}
 
+				/* ===========================
+   Make ABOUT / EMAIL / SOCIAL readable on dark background
+   =========================== */
+
+		/* ABOUT section text */
+				#about,
+				#about p,
+				#about li {
+				  color: rgba(255,255,255,0.88) !important;
+				}
+				
+				/* Contact labels (EMAIL / SOCIAL headings) */
+				.split.contact h3 {
+				  color: rgba(255,255,255,0.92) !important;
+				  letter-spacing: 0.08em !important;
+				}
+				
+				/* Contact email text + link */
+				.split.contact p,
+				.split.contact a {
+				  color: rgba(255,255,255,0.82) !important;
+				}
+				
+				.split.contact a:hover {
+				  color: rgba(56,189,248,0.95) !important;
+				}
+				
+				/* Social icons: ring + icon visible */
+				.split.contact ul.icons li a {
+				  color: rgba(255,255,255,0.90) !important;          /* icon */
+				  border-color: rgba(255,255,255,0.35) !important;   /* circle outline */
+				  background: rgba(255,255,255,0.06) !important;     /* subtle fill */
+				}
+				
+				.split.contact ul.icons li a:hover {
+				  color: #0f172a !important;
+				  background: rgba(56,189,248,0.95) !important;
+				  border-color: rgba(56,189,248,0.95) !important;
+				}
+
+
 			</style>
 
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
@@ -572,6 +613,7 @@ html, body {
 
 	</body>
 </html>
+
 
 
 
