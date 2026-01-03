@@ -227,6 +227,18 @@
 			    border-color: #38bdf8 !important;
 			}
 
+			#projects .actions .button,
+			.post.featured .actions .button {
+			  display: inline-flex !important;
+			  align-items: center !important;
+			  justify-content: center !important;
+			  text-align: center !important;
+			  line-height: 1 !important;
+			}
+			#projects .actions .button { min-height: 52px; }
+
+
+
 			
 			/* ============================================================
 			   FEATURED PROJECT FIXES
@@ -436,7 +448,7 @@
 				</section>
 
 				<!-- Contact Section -->
-				<section class="split contact">
+				<section id="contact" class="split contact">
 					<section class="alt">
 						<h3>Email</h3>
 						<p><a href="mailto:sbhasgauri98@gmail.com">sbhasgauri98@gmail.com</a></p>
@@ -449,6 +461,17 @@
 						</ul>
 					</section>
 				</section>
+
+				<section id="about" style="margin-top: 4rem;">
+					  <header class="major">
+					    <h2>About</h2>
+					    <p>
+					      I build data validation workflows and analytics tools that help teams trust their data
+					      and reduce manual effort—especially in quality/regulatory environments.
+					    </p>
+					  </header>
+				</section>
+
 
 			</div>
 			<!-- KPI Band -->
@@ -498,15 +521,29 @@
 		<script src="assets/js/util.js"></script>
 		<script src="assets/js/main.js"></script>
 
-		<script>
+		<!-- <script>
 		  document.querySelectorAll('a[href^="http"]').forEach(link => {
 		    link.setAttribute("target", "_blank");
 		    link.setAttribute("rel", "noopener");
 		  });
+		</script> -->
+		<script>
+		  document.querySelectorAll('a[href]').forEach(link => {
+		    const href = link.getAttribute('href');
+		    if (!href) return;
+		
+		    const isExternal = href.startsWith('http');
+		    if (isExternal) {
+		      link.setAttribute("target", "_blank");
+		      link.setAttribute("rel", "noopener");
+		    }
+		  });
 		</script>
+
 
 	</body>
 </html>
+
 
 
 
