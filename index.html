@@ -543,7 +543,22 @@ html, body {
 			  outline-offset: 4px;
 			  border-radius: 8px;
 			}
-
+			/* Fix uneven spacing in project descriptions (disable justify/word-stretch) */
+				#projects article p {
+				  text-align: left !important;          /* prevents justified gaps */
+				  text-justify: auto !important;
+				  word-spacing: normal !important;      /* overrides any theme word spacing */
+				  letter-spacing: normal !important;    /* optional: remove extra tracking */
+				  white-space: normal !important;
+				
+				  /* Better wrapping */
+				  overflow-wrap: anywhere;
+				  word-break: normal;
+				  hyphens: auto;
+				}
+				#projects article p {
+				  min-height: 7.2rem;  /* tweak up/down depending on your preferred look */
+				}
 
 
 			</style>
@@ -801,6 +816,7 @@ html, body {
 
 	</body>
 </html>
+
 
 
 
